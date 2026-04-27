@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nova Habit</title>
+
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>Nova Habit ✅</header>
+
+<input id="habit" placeholder="عادة جديدة">
+<button onclick="addHabit()">إضافة</button>
+
+<div id="habits"></div>
+
+<div class="apps">
+<h3>📱 تطبيقاتنا الأخرى</h3>
+<a href="../nova-tools/index.html">Nova Tools</a><br>
+<a href="../nova-focus/index.html">Nova Focus</a><br>
+<a href="../nova-money/index.html">Nova Money</a>
+</div>
+
+<script src="app.js"></script>
+
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('service-worker.js');
+}
+</script>
+
+</body>
+</html>
